@@ -1,0 +1,22 @@
+DEPENDENCIES
+  as-lap-asset
+    path: .
+    metadata: true
+
+GRAPH
+  as-apache2 (0.0.7)
+  as-asset (0.0.1)
+    yum-epel (>= 0.0.0)
+    yum-remi (>= 0.0.0)
+  as-lap-asset (0.0.1)
+    as-apache2 (>= 0.0.0)
+    as-asset (>= 0.0.0)
+    as-php (>= 0.0.0)
+  as-php (0.0.3)
+    yum-epel (>= 0.0.0)
+    yum-remi (>= 0.0.0)
+  yum (3.6.1)
+  yum-epel (0.6.2)
+    yum (~> 3.2)
+  yum-remi (0.1.0)
+    yum (>= 0.0.0)
